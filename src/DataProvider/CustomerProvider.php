@@ -62,7 +62,6 @@ class CustomerProvider extends DemoDataProvider
                 'customerNumber' => 'SWDEMO10000',
                 'username' => 'admin',
                 'name' => 'admin',
-                'nickname' => 'admin',
                 'password' => '$2y$10$qYoCQe2r3h/tiGIqwsq7YuuKBGCEmgtM/U4v182xtKDrFv5vSNFJO',
                 'email' => 'test@example.com',
                 'active' => true,
