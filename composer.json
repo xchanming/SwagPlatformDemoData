@@ -1,0 +1,46 @@
+{
+    "name": "cicada-ag/demo-data",
+    "description": "Plugin including demo data",
+    "version": "2.0.1",
+    "type": "cicada-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cicada AG & Shopware AG"
+        }
+    ],
+    "require": {
+        "cicada-ag/core": "~6.6.0"
+    },
+    "extra": {
+        "cicada-plugin-class": "Swag\\PlatformDemoData\\SwagPlatformDemoData",
+        "label": {
+            "zh-CN": "Cicada 6 Demo data",
+            "en-GB": "Cicada 6 Demo data"
+        },
+        "description": {
+            "zh-CN": "Demodaten Plugin für Cicada 6. Nicht in Produktiv-Umgebungen nutzen! Die Daten werden beim Aktivieren des Plugins importiert und überschreiben bestehende Daten.",
+            "en-GB": "Demo data plugin for Cicada 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
+        },
+        "manufacturerLink": {
+            "zh-CN": "https://xchanming.com",
+            "en-GB": "https://xchanming.com"
+        },
+        "supportLink": {
+            "zh-CN": "https://xchanming.com",
+            "en-GB": "https://xchanming.com"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\PlatformDemoData\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs": "../../../vendor/bin/php-cs-fixer fix --dry-run",
+        "cs-fix": "../../../vendor/bin/php-cs-fixer fix",
+        "phpstan": [
+            "../../../vendor/bin/phpstan analyze"
+        ]
+    }
+}
