@@ -51,6 +51,7 @@ class CustomerProvider extends DemoDataProvider
     public function getPayload(): array
     {
         $salutationId = $this->getSalutationId();
+        $paymentMethodId = $this->getPaymentMethodId();
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannelId();
 
@@ -59,6 +60,7 @@ class CustomerProvider extends DemoDataProvider
                 'id' => '6c97534c2c0747f39e8751e43cb2b013',
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
+                'defaultPaymentMethodId' => $paymentMethodId,
                 'customerNumber' => 'SWDEMO10000',
                 'username' => 'admin',
                 'name' => 'admin',
@@ -69,16 +71,15 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
-//                'defaultShippingAddress' => [
-//                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
-//                    'countryId' => $countryId,
-//                    'salutationId' => $salutationId,
-//                    'firstName' => 'Max',
-//                    'lastName' => 'Mustermann',
-//                    'street' => 'Musterstraße 1',
-//                    'zipcode' => '12345',
-//                    'city' => 'Musterstadt',
-//                ],
+                'defaultShippingAddress' => [
+                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                    'countryId' => $countryId,
+                    'salutationId' => $salutationId,
+                    'name' => 'Max',
+                    'street' => 'Musterstraße 1',
+                    'zipcode' => '12345',
+                    'city' => 'Musterstadt',
+                ],
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
             ],
         ];
