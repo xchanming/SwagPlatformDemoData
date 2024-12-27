@@ -51,7 +51,6 @@ class CustomerProvider extends DemoDataProvider
     public function getPayload(): array
     {
         $salutationId = $this->getSalutationId();
-        $paymentMethodId = $this->getPaymentMethodId();
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannelId();
 
@@ -60,7 +59,6 @@ class CustomerProvider extends DemoDataProvider
                 'id' => '6c97534c2c0747f39e8751e43cb2b013',
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
-                'defaultPaymentMethodId' => $paymentMethodId,
                 'customerNumber' => 'SWDEMO10000',
                 'username' => 'admin',
                 'name' => 'admin',
@@ -87,21 +85,6 @@ class CustomerProvider extends DemoDataProvider
 
         if (!$result) {
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
-        }
-
-        return (string) $result;
-    }
-
-    private function getPaymentMethodId(): string
-    {
-        $result = $this->connection->fetchOne('
-            SELECT LOWER(HEX(`id`))
-            FROM `payment_method`
-            WHERE `active` = 1;
-        ');
-
-        if (!$result) {
-            throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
         return (string) $result;
