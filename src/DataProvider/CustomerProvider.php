@@ -70,6 +70,16 @@ class CustomerProvider extends DemoDataProvider
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
+                'defaultShippingAddress' => [
+                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                    'countryId' => $countryId,
+                    'salutationId' => $salutationId,
+                    'name' => 'Max',
+                    'street' => 'Musterstraße 1',
+                    'zipcode' => '12345',
+                    'city' => 'Musterstadt',
+                ],
+                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
         ];
     }
