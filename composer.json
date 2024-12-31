@@ -6,7 +6,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Cicada AG & Shopware AG"
+            "name": "Cicada AG"
         }
     ],
     "require": {
