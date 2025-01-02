@@ -10,12 +10,12 @@ use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 class NewsletterRecipientProvider extends DemoDataProvider
 {
     private TranslationHelper $translationHelper;
+
     private DbHelper $dbHelper;
 
     public function __construct(
         private readonly Connection $connection
-    )
-    {
+    ) {
         $this->translationHelper = new TranslationHelper($connection);
         $this->dbHelper = new DbHelper($connection);
     }
@@ -41,7 +41,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'user1234@test.com',
                 'name' => 'user1234',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269cb7e470ec80ded1e0fcabd59c',
@@ -51,7 +51,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'user6666@test.com',
                 'name' => 'user6666',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269c723a73c2b205f9350242e619',
@@ -61,7 +61,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'user7777@test.com',
                 'name' => 'user7777',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269c31c572949c706f258e89dc81',
@@ -71,7 +71,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin1111@test.com',
                 'name' => 'admin1111',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269bec0c738288f72d1ce3d092cd',
@@ -81,7 +81,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin2222@test.com',
                 'name' => 'admin2222',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269802c67184ac81361ee4652d57',
@@ -91,7 +91,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin3333@test.com',
                 'name' => 'admin3333',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942697c4a070d0af72079a37c34087',
@@ -101,7 +101,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin4444@test.com',
                 'name' => 'admin4444',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '0194269789ff73afbc5530f972b962c0',
@@ -111,7 +111,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin6666@test.com',
                 'name' => 'admin6666',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '019426973f70722ab346f7c71412e339',
@@ -121,7 +121,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin8888@test.com',
                 'name' => 'admin8888',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942696ff8b72ef8029539c657c1bad',
@@ -131,7 +131,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'admin9999@test.com',
                 'name' => 'admin9999',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942696c3eb705cb067978d33cf4640',
@@ -141,7 +141,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'test6666@test.com',
                 'name' => 'test6666',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942696a54d700f9b5cbb769925ca8f',
@@ -151,7 +151,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'test8888@test.com',
                 'name' => 'test8888',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '019426962e9370f6952067dc8d638272',
@@ -161,7 +161,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'test9999@test.com',
                 'name' => 'test9999',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '019426876b9370e6a760109dd0b2375c',
@@ -171,7 +171,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'test@test.com',
                 'name' => 'test',
                 'status' => 'direct',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942693d3627328817dbc7539b146d1',
@@ -181,7 +181,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'demo1000@test.com',
                 'name' => 'demo1000',
                 'status' => 'notSet',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '019426948bd27391bf807783eb31f75e',
@@ -191,7 +191,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'demo9999@test.com',
                 'name' => 'demo9999',
                 'status' => 'optIn',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '019426953f2f71579c4e317400471821',
@@ -202,7 +202,7 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'updatedAt' => new \DateTime(),
                 'name' => 'demo8888',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
             ],
             [
                 'id' => '01942695d30a72399be448c1eab701e6',
@@ -212,8 +212,8 @@ class NewsletterRecipientProvider extends DemoDataProvider
                 'email' => 'demo6666@test.com',
                 'name' => 'demo6666',
                 'status' => 'optOut',
-                'salesChannelId'=> $this->dbHelper-> getStorefrontSalesChannel()
-            ]
+                'salesChannelId' => $this->dbHelper->getStorefrontSalesChannel(),
+            ],
         ];
     }
 }
