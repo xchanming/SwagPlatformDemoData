@@ -32,12 +32,21 @@
 
             <tag name="swag.demo_data.data_provider" priority="900" />
         </service>
+        <service id="Swag\PlatformDemoData\DataProvider\CustomerGroupProvider">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <tag name="swag.demo_data.data_provider" priority="850" />
+        </service>
 
         <service id="Swag\PlatformDemoData\DataProvider\CustomerProvider">
             <argument type="service" id="Doctrine\DBAL\Connection"/>
             <argument type="service" id="category.repository" />
 
             <tag name="swag.demo_data.data_provider" priority="800" />
+        </service>
+
+        <service id="Swag\PlatformDemoData\DataProvider\NewsletterRecipientProvider">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <tag name="swag.demo_data.data_provider" priority="750" />
         </service>
 
         <service id="Swag\PlatformDemoData\DataProvider\RuleProvider">
