@@ -413,7 +413,7 @@ class CustomerProvider extends DemoDataProvider
                 'email' => 'admin1234@test.com',
                 'active' => true,
                 'group' => [
-                    'id' => '0194265f889071d99507a9cc6b09b92f'
+                    'id' => '0194265f889071d99507a9cc6b09b92f',
                 ],
                 'guest' => false,
                 'newsletter' => false,
@@ -432,7 +432,7 @@ class CustomerProvider extends DemoDataProvider
                 'email' => 'test1234@test.com',
                 'active' => true,
                 'group' => [
-                    'id' => '0194265f62517068a03a07f37a1580b7'
+                    'id' => '0194265f62517068a03a07f37a1580b7',
                 ],
                 'guest' => false,
                 'newsletter' => false,
@@ -452,7 +452,7 @@ class CustomerProvider extends DemoDataProvider
                 'active' => true,
                 'guest' => false,
                 'group' => [
-                    'id' => '0194265fbcac71f7bd3f7ff0e50ddc92'
+                    'id' => '0194265fbcac71f7bd3f7ff0e50ddc92',
                 ],
                 'newsletter' => false,
                 'lastLogin' => '2023-01-05 07:13:39.641',
@@ -486,7 +486,7 @@ class CustomerProvider extends DemoDataProvider
                 'email' => 'user6666@test.com',
                 'active' => true,
                 'group' => [
-                    'id' => '0194266044b9706a8467c81a3ca36b60'
+                    'id' => '0194266044b9706a8467c81a3ca36b60',
                 ],
                 'guest' => false,
                 'newsletter' => false,
@@ -665,7 +665,7 @@ class CustomerProvider extends DemoDataProvider
                 'username' => 'test9999',
                 'name' => 'test9999',
                 'group' => [
-                    'id' => '0194265fbcac71f7bd3f7ff0e50ddc92'
+                    'id' => '0194265fbcac71f7bd3f7ff0e50ddc92',
                 ],
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test9999@test.com',
@@ -700,7 +700,7 @@ class CustomerProvider extends DemoDataProvider
                 'customerNumber' => '1134930010114',
                 'username' => 'demo8888',
                 'group' => [
-                    'id' => '0194265f62517068a03a07f37a1580b7'
+                    'id' => '0194265f62517068a03a07f37a1580b7',
                 ],
                 'name' => 'demo8888',
                 'password' => TestDefaults::HASHED_PASSWORD,
@@ -739,7 +739,7 @@ class CustomerProvider extends DemoDataProvider
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'demo1000@test.com',
                 'group' => [
-                    'id' => '0194266044b9706a8467c81a3ca36b60'
+                    'id' => '0194266044b9706a8467c81a3ca36b60',
                 ],
                 'active' => true,
                 'guest' => false,
@@ -764,7 +764,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getCountryId(): string
@@ -779,7 +779,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getStorefrontSalesChannelId(): string

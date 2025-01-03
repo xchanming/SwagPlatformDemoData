@@ -11,8 +11,7 @@ class CustomerGroupProvider extends DemoDataProvider
 
     public function __construct(
         private readonly Connection $connection
-    )
-    {
+    ) {
         $this->translationHelper = new TranslationHelper($connection);
     }
 
@@ -56,7 +55,7 @@ class CustomerGroupProvider extends DemoDataProvider
                     'zh-CN' => '积分会员客户组',
                     'en-GB' => 'Loyalty Program Members',
                 ]),
-            ]
+            ],
         ];
     }
 }

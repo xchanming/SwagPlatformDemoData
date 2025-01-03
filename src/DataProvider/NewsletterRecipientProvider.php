@@ -7,6 +7,7 @@ use Cicada\Core\Framework\Util\Hasher;
 use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
+
 #[Package('services-settings')]
 class NewsletterRecipientProvider extends DemoDataProvider
 {

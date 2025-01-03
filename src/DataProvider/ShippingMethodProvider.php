@@ -6,10 +6,11 @@ declare(strict_types=1);
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class ShippingMethodProvider extends DemoDataProvider
