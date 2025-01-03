@@ -9,15 +9,14 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Content\Category\CategoryCollection;
-use Cicada\Core\Content\Category\CategoryEntity;
 use Cicada\Core\Framework\Api\Context\SystemSource;
 use Cicada\Core\Framework\Context;
 use Cicada\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Cicada\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Cicada\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
 #[Package('services-settings')]
@@ -66,7 +65,7 @@ class CategoryProvider extends DemoDataProvider
                 'type' => 'page',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => '蝉鸣平台商城演示系统',
-                    'en-GB' => 'Cicada Chirping Platform Store Demo System'
+                    'en-GB' => 'Cicada Chirping Platform Store Demo System',
                 ]),
                 'children' => [
                     [
