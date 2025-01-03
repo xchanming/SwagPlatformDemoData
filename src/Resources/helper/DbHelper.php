@@ -126,4 +126,19 @@ class DbHelper
 
         return (string) $result;
     }
+    public function getTaxId(): string
+    {
+        $result = $this->connection->fetchOne('
+            SELECT LOWER(HEX(COALESCE(
+                (SELECT `id` FROM `tax` WHERE tax_rate = "0.00" LIMIT 1),
+	            (SELECT `id` FROM `tax`  LIMIT 1)
+            )))
+        ');
+
+        if (!$result) {
+            throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
+        }
+
+        return (string)$result;
+    }
 }

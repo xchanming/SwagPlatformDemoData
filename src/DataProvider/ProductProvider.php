@@ -71,13 +71,7 @@ class ProductProvider extends DemoDataProvider
                     'zh-CN' => self::LOREM_IPSUM,
                     'en-GB' => self::LOREM_IPSUM,
                 ]),
-                'manufacturer' => [
-                    'id' => 'cc1c20c365d34cfb88bfab3c3e81d350',
-                    'name' => $this->translationHelper->adjustTranslations([
-                        'zh-CN' => 'Cicada Freizeit',
-                        'en-GB' => 'Cicada Freetime',
-                    ]),
-                ],
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
                 'media' => [
                     [
                         'id' => 'e648140ff1f04177b40128ac6b649d8a',
@@ -132,7 +126,7 @@ class ProductProvider extends DemoDataProvider
             [
                 'id' => '1901dc5e888f4b1ea4168c2c5f005540',
                 'productNumber' => 'SWDEMO100013',
-                'active' => false,
+                'active' => true,
                 'taxId' => $taxId,
                 'stock' => 40,
                 'purchaseUnit' => 250.0,
@@ -149,13 +143,8 @@ class ProductProvider extends DemoDataProvider
                     'zh-CN' => self::LOREM_IPSUM,
                     'en-GB' => self::LOREM_IPSUM,
                 ]),
-                'manufacturer' => [
-                    'id' => '2326d67406134c88bcf80e52d9d2ecb7',
-                    'name' => $this->translationHelper->adjustTranslations([
-                        'zh-CN' => 'Cicada Lebensmittel',
-                        'en-GB' => 'Cicada Food',
-                    ]),
-                ],
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+
                 'media' => [
                     [
                         'id' => '0ca83b27e34c4b1f9ab00aed4e3b8b03',
@@ -212,13 +201,8 @@ class ProductProvider extends DemoDataProvider
                     'zh-CN' => self::LOREM_IPSUM,
                     'en-GB' => self::LOREM_IPSUM,
                 ]),
-                'manufacturer' => [
-                    'id' => '7f24e96676e944b0a0addc20d56728cb',
-                    'name' => $this->translationHelper->adjustTranslations([
-                        'zh-CN' => 'Cicada Kleidung',
-                        'en-GB' => 'Cicada Fashion',
-                    ]),
-                ],
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+
                 'media' => [
                     [
                         'id' => 'f0e28db1195847dc9acb8eb016473e0c',
@@ -292,7 +276,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => 'd6448ce8dd0e4720a92c1bdddb9e6c96',
                 'categories' => [
                     [
-                        'id' => '2185182cbbd4462ea844abeb2a438b33',
+                        'id' => 'a515ae260223466f8e37471d279e6406',
                     ],
                 ],
                 'price' => [[
@@ -352,7 +336,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => '55a1e7d9f9e84400a17e2b86d7a3fc89',
                 'categories' => [
                     [
-                        'id' => '8de9b484c54f441c894774e5f57e485c',
+                        'id' => 'a515ae260223466f8e37471d279e6406',
                     ],
                 ],
                 'price' => [[
@@ -508,7 +492,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => '683c3a0a0c26464fb65332d1a9adf7e2',
                 'categories' => [
                     [
-                        'id' => '2185182cbbd4462ea844abeb2a438b33',
+                        'id' => 'a515ae260223466f8e37471d279e6406',
                     ],
                 ],
                 'price' => [[
@@ -600,6 +584,1231 @@ class ProductProvider extends DemoDataProvider
                     ],
                 ],
             ],
+            [
+                'id' => '01942cff521370a5a751129858c6caeb',
+                'productNumber' => 'CC1000010002',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 950,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Mac FoneLab for iOS 10.5.58.149578 iOS设备数据快速恢复软件',
+                    'en-GB' => 'Mac FoneLab for iOS 10.5.58.149578',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+
+                'media' => [
+                    [
+                        'id' => '01942d0162cf721f8a7ffe5f7b0c8dfe',
+                        'position' => 1,
+                        'mediaId' => '01942d0114ba736abbc99a36328a0f31',
+                    ],
+                ],
+                'coverId' => '01942d0162cf721f8a7ffe5f7b0c8dfe',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 100,
+                    'gross' => 100,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d03b19a7343acf1c06e42c78e05',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d049499719a8f30300c42593ce9',
+                'productNumber' => 'CC1000010003',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => '4K YouTube to MP3 5.7.4 在线视频提取音乐',
+                    'en-GB' => '4K YouTube to MP3 5.7.4',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+
+                'media' => [
+                    [
+                        'id' => '01942d055737728fbeb8118937bc6c10',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d055737728fbeb8118937bc6c10',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 120,
+                    'gross' => 120,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d0e3c5b721383385a467b976b7f',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d0c53f172499642029fbf9fa848',
+                'productNumber' => 'CC1000010004',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'EdgeView 4.9.6 图像查看器',
+                    'en-GB' => 'EdgeView 4.9.6',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+
+                'media' => [
+                    [
+                        'id' => '01942d14790073aab3def5efd7dbcbc8',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d14790073aab3def5efd7dbcbc8',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 50,
+                    'gross' => 50,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d0e19e6719ab8ad6a5f594fa162',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d0e99a57124b81bb93b535f807b',
+                'productNumber' => 'CC1000010005',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Adobe Acrobat Pro DC',
+                    'en-GB' => 'Adobe Acrobat Pro DC',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '2326d67406134c88bcf80e52d9d2ecb7',
+
+                'media' => [
+                    [
+                        'id' => '01942d145f9d71fbb5dfbc7612b1d0b2',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d145f9d71fbb5dfbc7612b1d0b2',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 60,
+                    'gross' => 60,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d0f8002722e89a076c6a5e9feee',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d0fb7607249aa413c00c2480644',
+                'productNumber' => 'CC1000010006',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'PullTube：油管视频下载',
+                    'en-GB' => 'PullTube',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '2326d67406134c88bcf80e52d9d2ecb7',
+
+                'media' => [
+                    [
+                        'id' => '01942d143e1b72568a76847c2e5a56ee',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d143e1b72568a76847c2e5a56ee',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 450,
+                    'gross' => 450,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d103c96709da050bb6b96ca1869',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d10980b73bb96645b4339f7f3df',
+                'productNumber' => 'CC1000010007',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Typora1.9.3',
+                    'en-GB' => 'Typora1.9.3',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '2326d67406134c88bcf80e52d9d2ecb7',
+
+                'media' => [
+                    [
+                        'id' => '01942d1424697366915077e397b97bdc',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d1424697366915077e397b97bdc',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 700,
+                    'gross' => 700,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d10e7807162906a2afd00248b94',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d113c0270ec82ff7ec33079e765',
+                'productNumber' => 'CC1000010008',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'GoodTask',
+                    'en-GB' => 'GoodTask',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d140c597205be8061b4817d8902',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d140c597205be8061b4817d8902',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 20,
+                    'gross' => 20,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d11d6507112a039fb84bb08278c',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d1247a772308f5d1173563853e5',
+                'productNumber' => 'CC1000010009',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Idea',
+                    'en-GB' => 'Idea',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d13ef64729ab9a79f959825b582',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d13ef64729ab9a79f959825b582',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 20,
+                    'gross' => 20,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d12682772f3bb8d85201a5574bc',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d12ca40712bba47864bf02accf1',
+                'productNumber' => 'CC1000010010',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Idea',
+                    'en-GB' => 'Idea',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d13bc0471eb905c0f5dfa2aba1f',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d13bc0471eb905c0f5dfa2aba1f',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 20,
+                    'gross' => 20,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d12e92c733e90594ee329fe996d',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d133d7573cfa9ec044567fab505',
+                'productNumber' => 'CC1000010011',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 0,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Idea',
+                    'en-GB' => 'Idea',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d133d7573cfa9ec044567fab505',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d133d7573cfa9ec044567fab505',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 20,
+                    'gross' => 20,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d133d7573cfa9ec044567fab505',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d15bc407205a520d635d6583f9a',
+                'productNumber' => 'DD1000010003',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Phpstorm 6.6.60',
+                    'en-GB' => 'Phpstorm 6.6.60',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d15bc407205a520d635d6583f9a',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d15bc407205a520d635d6583f9a',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 120,
+                    'gross' => 120,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d15bc407205a520d635d6583f9a',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d1674f071838d49fe3f39dc3ad1',
+                'productNumber' => 'DD1000010004',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'OmniPlan Pro 6.6.60',
+                    'en-GB' => 'Phpstorm Pro 6.6.60',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d1674f071838d49fe3f39dc3ad1',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d1674f071838d49fe3f39dc3ad1',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 120,
+                    'gross' => 120,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d1674f071838d49fe3f39dc3ad1',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d26c06472f481e3dcef26ccedae',
+                'productNumber' => 'DD1000010005',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'CompressX 1.7',
+                    'en-GB' => 'CompressX 1.7',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d26c06472f481e3dcef26ccedae',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d26c06472f481e3dcef26ccedae',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 122,
+                    'gross' => 122,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d26c06472f481e3dcef26ccedae',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d27a10c737a822968072ccf31b3',
+                'productNumber' => 'DD1000010006',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Termius',
+                    'en-GB' => 'Termius',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d27a10c737a822968072ccf31b3',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d27a10c737a822968072ccf31b3',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 122,
+                    'gross' => 122,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d27a10c737a822968072ccf31b3',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d28417a7159a4082a11513ae354',
+                'productNumber' => 'DD1000010007',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Parallels Desktop V8',
+                    'en-GB' => 'Parallels Desktop V8',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d28417a7159a4082a11513ae354',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d28417a7159a4082a11513ae354',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 1000,
+                    'gross' => 1000,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d28417a7159a4082a11513ae354',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2958db70c1a4a6c8e1e9c074c9',
+                'productNumber' => 'DD1000010008',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'QuickRecorder',
+                    'en-GB' => 'QuickRecorder',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2958db70c1a4a6c8e1e9c074c9',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2958db70c1a4a6c8e1e9c074c9',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2958db70c1a4a6c8e1e9c074c9',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2a71157009b3269f4fe1f775af',
+                'productNumber' => 'DD1000010009',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'PlayCover',
+                    'en-GB' => 'PlayCover',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2a71157009b3269f4fe1f775af',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2a71157009b3269f4fe1f775af',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2a71157009b3269f4fe1f775af',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2af376700e8dd9a425394ed8dc',
+                'productNumber' => 'DD1000010010',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'NeoHtop',
+                    'en-GB' => 'NeoHtop',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2af376700e8dd9a425394ed8dc',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2af376700e8dd9a425394ed8dc',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2af376700e8dd9a425394ed8dc',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2b7e39710e92ca695df0541849',
+                'productNumber' => 'DD1000010011',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Sentinel',
+                    'en-GB' => 'Sentinel',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2b7e39710e92ca695df0541849',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2b7e39710e92ca695df0541849',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2b7e39710e92ca695df0541849',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2bf79a73209f69b7b9a75511a5',
+                'productNumber' => 'DD1000010012',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'TrollInstallerX',
+                    'en-GB' => 'TrollInstallerX',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2bf79a73209f69b7b9a75511a5',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2bf79a73209f69b7b9a75511a5',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2bf79a73209f69b7b9a75511a5',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2c7464722ca6d71006155488b0',
+                'productNumber' => 'DD1000010013',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'PlayCover',
+                    'en-GB' => 'PlayCover',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2c7464722ca6d71006155488b0',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2c7464722ca6d71006155488b0',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2c7464722ca6d71006155488b0',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2d883773cbb3db7169e1d1632e',
+                'productNumber' => 'DD1000010014',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Telegram',
+                    'en-GB' => 'Telegram',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2d883773cbb3db7169e1d1632e',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2d883773cbb3db7169e1d1632e',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2d883773cbb3db7169e1d1632e',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2e19757070aacad8a7623adfa6',
+                'productNumber' => 'DD1000010015',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'MacOS 13 Ventura',
+                    'en-GB' => 'MacOS 13 Ventura',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2e19757070aacad8a7623adfa6',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2e19757070aacad8a7623adfa6',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2e19757070aacad8a7623adfa6',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2e972c71959617f564720294ca',
+                'productNumber' => 'DD1000010016',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'MacOS Sonoma',
+                    'en-GB' => 'MacOS Sonoma',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2e972c71959617f564720294ca',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2e972c71959617f564720294ca',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2e972c71959617f564720294ca',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01942d2f4643739ab3c1e9761c094c62',
+                'productNumber' => 'DD1000010017',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Mihomo Party',
+                    'en-GB' => 'Mihomo Party',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+
+                'media' => [
+                    [
+                        'id' => '01942d2f4643739ab3c1e9761c094c62',
+                        'position' => 1,
+                        'mediaId' => '01942d0582d071a1acca7b87bc371683',
+                    ],
+                ],
+                'coverId' => '01942d2f4643739ab3c1e9761c094c62',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2f4643739ab3c1e9761c094c62',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
         ];
     }
 
@@ -616,7 +1825,7 @@ class ProductProvider extends DemoDataProvider
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getStorefrontSalesChannel(): string
@@ -631,6 +1840,6 @@ class ProductProvider extends DemoDataProvider
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 }

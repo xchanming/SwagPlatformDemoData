@@ -80,6 +80,18 @@ class MediaProvider extends DemoDataProvider
                 'id' => 'de4b7dbe9d95435092cb85ce146ced28',
                 'mediaFolderId' => $cmsFolder,
             ],
+            [
+                'id' => '01942d0114ba736abbc99a36328a0f31',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d0582d071a1acca7b87bc371683',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d380e0b709cb1f7eef0c6093137',
+                'mediaFolderId' => $productFolder,
+            ],
         ];
     }
 
