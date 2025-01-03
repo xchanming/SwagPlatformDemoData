@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Content\Media\File\FileSaver;
 use Cicada\Core\Content\Media\File\MediaFile;
 use Cicada\Core\Framework\Context;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class MediaProvider extends DemoDataProvider
@@ -85,7 +85,7 @@ class MediaProvider extends DemoDataProvider
 
     public function finalize(Context $context): void
     {
-        $files = \glob(__DIR__ . '/../Resources/media/*/*.jpg');
+        $files = \glob(__DIR__ . '/../Resources/media/*/*.{jpg,png,svg}', \GLOB_BRACE);
         if ($files === false) {
             return;
         }

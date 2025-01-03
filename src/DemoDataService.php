@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData;
 
-use Doctrine\DBAL\Exception\ForeignKeyConstraintViolationException;
 use Cicada\Core\Framework\Api\Controller\SyncController;
 use Cicada\Core\Framework\Context;
 use Cicada\Core\Framework\DataAbstractionLayer\Write\Validation\RestrictDeleteViolationException;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Exception\ForeignKeyConstraintViolationException;
 use Swag\PlatformDemoData\DataProvider\DemoDataProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
