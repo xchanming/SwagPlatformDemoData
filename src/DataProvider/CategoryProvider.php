@@ -65,8 +65,8 @@ class CategoryProvider extends DemoDataProvider
                 'visible' => true,
                 'type' => 'page',
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => '蝉鸣平台游戏商城演示系统',
-                    'en-GB' => 'Cicada Chirping Platform Game Store Demo System'
+                    'zh-CN' => '蝉鸣平台商城演示系统',
+                    'en-GB' => 'Cicada Chirping Platform Store Demo System'
                 ]),
                 'children' => [
                     [
