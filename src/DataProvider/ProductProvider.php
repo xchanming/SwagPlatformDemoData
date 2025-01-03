@@ -82,7 +82,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => 'e648140ff1f04177b40128ac6b649d8a',
                 'categories' => [
                     [
-                        'id' => '251448b91bc742de85643f5fccd89051',
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
                     ],
                 ],
                 'price' => [[
@@ -213,7 +213,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => 'f0e28db1195847dc9acb8eb016473e0c',
                 'categories' => [
                     [
-                        'id' => '251448b91bc742de85643f5fccd89051',
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
                     ],
                 ],
                 'price' => [[
@@ -276,7 +276,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => 'd6448ce8dd0e4720a92c1bdddb9e6c96',
                 'categories' => [
                     [
-                        'id' => 'a515ae260223466f8e37471d279e6406',
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
                     ],
                 ],
                 'price' => [[
@@ -336,7 +336,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => '55a1e7d9f9e84400a17e2b86d7a3fc89',
                 'categories' => [
                     [
-                        'id' => 'a515ae260223466f8e37471d279e6406',
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
                     ],
                 ],
                 'price' => [[
@@ -492,7 +492,7 @@ class ProductProvider extends DemoDataProvider
                 'coverId' => '683c3a0a0c26464fb65332d1a9adf7e2',
                 'categories' => [
                     [
-                        'id' => 'a515ae260223466f8e37471d279e6406',
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
                     ],
                 ],
                 'price' => [[
