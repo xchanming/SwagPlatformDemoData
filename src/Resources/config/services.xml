@@ -80,5 +80,13 @@
 
             <tag name="swag.demo_data.data_provider" priority="200" />
         </service>
+        <service id="Swag\PlatformDemoData\DataProvider\PromotionProvider">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <tag name="swag.demo_data.data_provider" priority="150" />
+        </service>
+        <service id="Swag\PlatformDemoData\DataProvider\OrderProvider">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <tag name="swag.demo_data.data_provider" priority="100" />
+        </service>
     </services>
 </container>
