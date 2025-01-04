@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\Resources\helper;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class TranslationHelper

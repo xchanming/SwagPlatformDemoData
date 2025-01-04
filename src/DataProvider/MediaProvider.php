@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Content\Media\File\FileSaver;
 use Cicada\Core\Content\Media\File\MediaFile;
 use Cicada\Core\Framework\Context;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class MediaProvider extends DemoDataProvider
@@ -80,12 +80,36 @@ class MediaProvider extends DemoDataProvider
                 'id' => 'de4b7dbe9d95435092cb85ce146ced28',
                 'mediaFolderId' => $cmsFolder,
             ],
+            [
+                'id' => '01942d0114ba736abbc99a36328a0f31',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d0582d071a1acca7b87bc371683',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d380e0b709cb1f7eef0c6093137',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d419299719e9c7d0ff15203e138',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d42ca8b73318de2dad51f0bc61c',
+                'mediaFolderId' => $productFolder,
+            ],
+            [
+                'id' => '01942d44c88b72dcb93ce1e18e31d9c0',
+                'mediaFolderId' => $productFolder,
+            ],
         ];
     }
 
     public function finalize(Context $context): void
     {
-        $files = \glob(__DIR__ . '/../Resources/media/*/*.jpg');
+        $files = \glob(__DIR__ . '/../Resources/media/*/*.{jpg,png,svg}', \GLOB_BRACE);
         if ($files === false) {
             return;
         }

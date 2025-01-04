@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Doctrine\DBAL\Connection;
 use Cicada\Core\Framework\Log\Package;
+use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class RuleProvider extends DemoDataProvider
