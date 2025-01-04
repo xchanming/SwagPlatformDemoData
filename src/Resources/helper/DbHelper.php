@@ -126,6 +126,99 @@ class DbHelper
         return (string) $result;
     }
 
+    public function getCountryId(string $iso = 'CN'): ?string
+    {
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM country
+                WHERE iso = :iso
+            ',
+            ['iso' => $iso]
+        );
+
+        if ($result === false) {
+            return null;
+        }
+
+        return (string) $result;
+    }
+
+    public function getCountryStateId(string $iso = 'CN'): ?string
+    {
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM country
+                WHERE iso = :iso
+            ',
+            ['iso' => $iso]
+        );
+
+        if ($result === false) {
+            return null;
+        }
+        $countryId = (string) $result;
+
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM country_state
+                WHERE country_id = :countryId LIMIT 1
+            ',
+            ['countryId' => $countryId]
+        );
+        if ($result === false) {
+            return null;
+        }
+
+        return (string) $result;
+    }
+
+    public function getShippingMethodId(string $technicalName = 'shipping_standard'): ?string
+    {
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM shipping_method
+                WHERE technical_name = :technicalName
+            ',
+            ['technicalName' => $technicalName]
+        );
+
+        if ($result === false) {
+            return null;
+        }
+
+        return (string) $result;
+    }
+
+    public function getStateMachineStateId(string $technicalName, $stateTechnicalName): ?string
+    {
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM state_machine
+                WHERE technical_name = :technicalName
+            ',
+            ['technicalName' => $technicalName]
+        );
+
+        if ($result === false) {
+            return null;
+        }
+        $result = $this->connection->fetchOne(
+            '
+                SELECT LOWER(HEX(id))
+                FROM state_machine_state
+                WHERE technical_name = :stateTechnicalName
+            ',
+            ['stateTechnicalName' => $stateTechnicalName]
+        );
+
+        return (string) $result;
+    }
+
     private function getLocaleId(string $languageCode): ?string
     {
         $result = $this->connection->fetchOne(
