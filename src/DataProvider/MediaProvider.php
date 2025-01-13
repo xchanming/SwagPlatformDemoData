@@ -104,6 +104,10 @@ class MediaProvider extends DemoDataProvider
                 'id' => '01942d44c88b72dcb93ce1e18e31d9c0',
                 'mediaFolderId' => $productFolder,
             ],
+            [
+                'id' => '01945da69901702eac029da8681c93b7',
+                'mediaFolderId' => $productFolder,
+            ],
         ];
     }
 

@@ -236,4 +236,10 @@ class DbHelper
 
         return (string) $result;
     }
+    public function getInstantDeliveryId(): ?string
+    {
+        $id = $this->connection->fetchOne('SELECT LOWER(HEX(delivery_time_id)) FROM delivery_time_translation WHERE `name` = "Instant download" LIMIT 1');
+
+        return \is_string($id) ? $id : null;
+    }
 }

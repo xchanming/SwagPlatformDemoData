@@ -14,6 +14,7 @@ use Cicada\Core\Defaults;
 use Cicada\Core\Framework\Log\Package;
 use Cicada\Core\Framework\Uuid\Uuid;
 use Doctrine\DBAL\Connection;
+use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
 #[Package('services-settings')]
@@ -25,10 +26,13 @@ class ProductProvider extends DemoDataProvider
 
     private TranslationHelper $translationHelper;
 
+    private DbHelper $dbHelper;
+
     public function __construct(Connection $connection)
     {
         $this->connection = $connection;
         $this->translationHelper = new TranslationHelper($connection);
+        $this->dbHelper = new DbHelper($this->connection);
     }
 
     public function getAction(): string
@@ -1790,6 +1794,62 @@ class ProductProvider extends DemoDataProvider
                     ],
                 ],
                 'coverId' => '01942d2f4643739ab3c1e9761c094c62',
+                'categories' => [
+                    [
+                        'id' => '77b959cf66de4c1590c7f9b7da3982f3',
+                    ],
+                ],
+                'price' => [[
+                    'net' => 0.01,
+                    'gross' => 0.01,
+                    'linked' => true,
+                    'currencyId' => Defaults::CURRENCY,
+                ]],
+                'visibilities' => [
+                    [
+                        'id' => '01942d2f4643739ab3c1e9761c094c62',
+                        'salesChannelId' => $storefrontSalesChannel,
+                        'visibility' => ProductVisibilityDefinition::VISIBILITY_ALL,
+                    ],
+                ],
+            ],
+            [
+                'id' => '01945da69901702eac029da8681c93b7',
+                'productNumber' => 'DD1001110017',
+                'active' => true,
+                'taxId' => $taxId,
+                'stock' => 300,
+                'purchaseUnit' => 1.0,
+                'referenceUnit' => 1.0,
+                'shippingFree' => true,
+                'purchasePrice' => 600,
+                'releaseDate' => new \DateTimeImmutable(),
+                'displayInListing' => true,
+                'name' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => 'Download product',
+                    'en-GB' => 'Download product',
+                ]),
+                'description' => $this->translationHelper->adjustTranslations([
+                    'zh-CN' => self::LOREM_IPSUM,
+                    'en-GB' => self::LOREM_IPSUM,
+                ]),
+                'manufacturerId' => '01942d007c6a7277a2a058fa0b90322a',
+                'downloads' => [
+                    [
+                        'id' => '01945da9597b70bcb5b2db3367380386',
+                        'mediaId' => '2de02991cd0548a4ac6cc35cb11773a0',
+                    ],
+                ],
+                'maxPurchase' => 1,
+                'deliveryTimeId' => $this->dbHelper->getInstantDeliveryId(),
+                'media' => [
+                    [
+                        'id' => '01945da69901702eac029da8681c93b7',
+                        'position' => 1,
+                        'mediaId' => '01945da69901702eac029da8681c93b7',
+                    ],
+                ],
+                'coverId' => '01945da69901702eac029da8681c93b7',
                 'categories' => [
                     [
                         'id' => '77b959cf66de4c1590c7f9b7da3982f3',
