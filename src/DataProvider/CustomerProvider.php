@@ -78,7 +78,6 @@ class CustomerProvider extends DemoDataProvider
                     'name' => 'Admin',
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
-                    'city' => '北京',
                 ],
                 'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
