@@ -15,7 +15,7 @@
     "extra": {
         "cicada-plugin-class": "Swag\\PlatformDemoData\\SwagPlatformDemoData",
         "label": {
-            "zh-CN": "蝉鸣商城演示数据",
+            "zh-CN": "商城演示数据",
             "en-GB": "Cicada 6 Demo data"
         },
         "description": {
