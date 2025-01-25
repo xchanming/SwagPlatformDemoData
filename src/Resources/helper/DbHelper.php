@@ -164,9 +164,9 @@ class DbHelper
             '
                 SELECT LOWER(HEX(id))
                 FROM country_state
-                WHERE country_id = :countryId LIMIT 1
+                WHERE country_id = :countryId and short_code=:shortCode LIMIT 1
             ',
-            ['countryId' => $countryId]
+            ['countryId' => Uuid::fromHexToBytes($countryId), 'shortCode' => '51']
         );
         if ($result === false) {
             return null;
@@ -219,6 +219,44 @@ class DbHelper
         return (string) $result;
     }
 
+    public function getInstantDeliveryId(): ?string
+    {
+        $id = $this->connection->fetchOne('SELECT LOWER(HEX(delivery_time_id)) FROM delivery_time_translation WHERE `name` = "Instant download" LIMIT 1');
+
+        return \is_string($id) ? $id : null;
+    }
+
+    public function getValidCountryDistrictId(): string
+    {
+        $result = $this->connection->fetchOne('
+            SELECT LOWER(HEX(`id`))
+            FROM `country_state`
+            WHERE `parent_id`=:parentId and `short_code`="510156" and `active` = 1
+        ', ['parentId' => Uuid::fromHexToBytes($this->getValidCountryCityId())]);
+
+        if (!$result) {
+            throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
+        }
+
+        return (string) $result;
+    }
+
+    public function getValidCountryCityId(): string
+    {
+
+        $result = $this->connection->fetchOne('
+            SELECT LOWER(HEX(`id`))
+            FROM `country_state`
+            WHERE `parent_id`=:parentId and `short_code`=:shortCode and `active` = 1
+        ', ['parentId' => Uuid::fromHexToBytes($this->getCountryStateId()), 'shortCode' => '5101']);
+
+        if (!$result) {
+            throw new \RuntimeException('No city found, please make sure that basic data is available by running the migrations.');
+        }
+
+        return (string) $result;
+    }
+
     private function getLocaleId(string $languageCode): ?string
     {
         $result = $this->connection->fetchOne(
@@ -235,11 +273,5 @@ class DbHelper
         }
 
         return (string) $result;
-    }
-    public function getInstantDeliveryId(): ?string
-    {
-        $id = $this->connection->fetchOne('SELECT LOWER(HEX(delivery_time_id)) FROM delivery_time_translation WHERE `name` = "Instant download" LIMIT 1');
-
-        return \is_string($id) ? $id : null;
     }
 }

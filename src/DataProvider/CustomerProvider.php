@@ -19,6 +19,7 @@ use Cicada\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Cicada\Core\Framework\Log\Package;
 use Cicada\Core\Test\TestDefaults;
 use Doctrine\DBAL\Connection;
+use Swag\PlatformDemoData\Resources\helper\DbHelper;
 
 #[Package('services-settings')]
 class CustomerProvider extends DemoDataProvider
@@ -30,6 +31,8 @@ class CustomerProvider extends DemoDataProvider
      */
     private EntityRepository $categoryRepository;
 
+    private DbHelper $dbHelper;
+
     /**
      * @param EntityRepository<CategoryCollection> $categoryRepository
      */
@@ -37,6 +40,7 @@ class CustomerProvider extends DemoDataProvider
     {
         $this->connection = $connection;
         $this->categoryRepository = $categoryRepository;
+        $this->dbHelper = new DbHelper($connection);
     }
 
     public function getAction(): string
@@ -74,6 +78,9 @@ class CustomerProvider extends DemoDataProvider
                 'defaultShippingAddress' => [
                     'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
                     'countryId' => $countryId,
+                    'countryStateId' => $this->dbHelper->getCountryStateId($countryId),
+                    'cityId' => $this->dbHelper->getValidCountryCityId(),
+                    'districtId' => $this->dbHelper->getValidCountryDistrictId(),
                     'salutationId' => $salutationId,
                     'name' => 'Admin',
                     'street' => '北京市长安街1号',
@@ -763,7 +770,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getCountryId(): string
@@ -771,14 +778,14 @@ class CustomerProvider extends DemoDataProvider
         $result = $this->connection->fetchOne('
             SELECT LOWER(HEX(`id`))
             FROM `country`
-            WHERE `active` = 1;
+            WHERE `active` = 1 and `iso3`="CHN";
         ');
 
         if (!$result) {
             throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getStorefrontSalesChannelId(): string
