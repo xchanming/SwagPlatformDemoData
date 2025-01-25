@@ -243,7 +243,6 @@ class DbHelper
 
     public function getValidCountryCityId(): string
     {
-
         $result = $this->connection->fetchOne('
             SELECT LOWER(HEX(`id`))
             FROM `country_state`

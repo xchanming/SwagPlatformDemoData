@@ -65,8 +65,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000200000022',
-                'username' => 'admin',
-                'title' => 'admin',
+                'title' => '清风徐来',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test@test.com',
                 'active' => true,
@@ -93,8 +92,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000000000000',
-                'username' => 'test',
-                'title' => 'test',
+                'title' => '😊笑死嗷',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test1@test.com',
                 'active' => true,
@@ -109,8 +107,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020000000000',
-                'username' => 'demo',
-                'title' => 'demo',
+                'title' => '诗酒趁年华',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test2@test.com',
                 'active' => true,
@@ -125,8 +122,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030000000',
-                'username' => 'shop',
-                'title' => 'shop',
+                'title' => '量子行者⚛️',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'shop@test.com',
                 'active' => true,
@@ -141,8 +137,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010000',
-                'username' => 'zhangsan',
-                'title' => 'zhangsan',
+                'title' => '54程序员',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'zhangsan@test.com',
                 'active' => true,
@@ -157,8 +152,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010006',
-                'username' => 'lisi',
-                'title' => 'lisi',
+                'title' => '冰封王座❄️',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'lisi@test.com',
                 'active' => true,
@@ -740,8 +734,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010116',
-                'username' => 'demo1000',
-                'title' => 'demo1000',
+                'title' => '👍古方',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'demo1000@test.com',
                 'group' => [
@@ -770,7 +763,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getCountryId(): string
@@ -785,7 +778,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getStorefrontSalesChannelId(): string
