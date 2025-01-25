@@ -80,6 +80,7 @@ class CustomerProvider extends DemoDataProvider
                     'countryStateId' => $this->dbHelper->getCountryStateId($countryId),
                     'cityId' => $this->dbHelper->getValidCountryCityId(),
                     'districtId' => $this->dbHelper->getValidCountryDistrictId(),
+                    'phoneNumber' => '12345678',
                     'salutationId' => $salutationId,
                     'name' => 'Admin',
                     'street' => '北京市长安街1号',

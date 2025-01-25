@@ -235,9 +235,8 @@ class DbHelper
         ', ['parentId' => Uuid::fromHexToBytes($this->getValidCountryCityId())]);
 
         if (!$result) {
-            throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
+            throw new \RuntimeException('No district found, please make sure that basic data is available by running the migrations.');
         }
-
         return (string) $result;
     }
 
