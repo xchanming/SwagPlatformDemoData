@@ -77,7 +77,7 @@ class CustomerProvider extends DemoDataProvider
                 'defaultShippingAddress' => [
                     'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
                     'countryId' => $countryId,
-                    'countryStateId' => $this->dbHelper->getCountryStateId($countryId),
+                    'countryStateId' => $this->dbHelper->getCountryStateId(),
                     'cityId' => $this->dbHelper->getValidCountryCityId(),
                     'districtId' => $this->dbHelper->getValidCountryDistrictId(),
                     'phoneNumber' => '12345678',
