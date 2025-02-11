@@ -2,9 +2,9 @@
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Cicada\Core\Content\Product\Aggregate\ProductVisibility\ProductVisibilityDefinition;
-use Cicada\Core\Defaults;
-use Cicada\Core\Framework\Log\Package;
+use Shopware\Core\Content\Product\Aggregate\ProductVisibility\ProductVisibilityDefinition;
+use Shopware\Core\Defaults;
+use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;

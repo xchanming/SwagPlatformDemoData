@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Cicada\Core\Framework\Context;
-use Cicada\Core\Framework\Log\Package;
+use Shopware\Core\Framework\Context;
+use Shopware\Core\Framework\Log\Package;
 
 #[Package('services-settings')]
 abstract class DemoDataProvider

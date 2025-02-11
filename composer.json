@@ -16,11 +16,11 @@
         "cicada-plugin-class": "Swag\\PlatformDemoData\\SwagPlatformDemoData",
         "label": {
             "zh-CN": "商城演示数据",
-            "en-GB": "Cicada 6 Demo data"
+            "en-GB": "Shopware 6 Demo data"
         },
         "description": {
             "zh-CN": "演示数据插件。请勿在生产环境中使用！启用插件时，数据将被导入并覆盖现有数据。",
-            "en-GB": "Demo data plugin for Cicada 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
+            "en-GB": "Demo data plugin for Shopware 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
         },
         "manufacturerLink": {
             "zh-CN": "https://xchanming.com",

@@ -8,7 +8,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-use Cicada\Core\TestBootstrapper;
+use Shopware\Core\TestBootstrapper;
 
 if (!class_exists(TestBootstrapper::class)) {
     require_once __DIR__ . '/../../../../src/Core/TestBootstrapper.php';

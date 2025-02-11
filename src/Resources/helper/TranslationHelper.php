@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\Resources\helper;
 
-use Cicada\Core\Framework\Log\Package;
+use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]

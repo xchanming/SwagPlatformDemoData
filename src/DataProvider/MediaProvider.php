@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Cicada\Core\Content\Media\File\FileSaver;
-use Cicada\Core\Content\Media\File\MediaFile;
-use Cicada\Core\Framework\Context;
-use Cicada\Core\Framework\Log\Package;
+use Shopware\Core\Content\Media\File\FileSaver;
+use Shopware\Core\Content\Media\File\MediaFile;
+use Shopware\Core\Framework\Context;
+use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]

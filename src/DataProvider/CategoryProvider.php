@@ -9,13 +9,13 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Cicada\Core\Content\Category\CategoryCollection;
-use Cicada\Core\Framework\Api\Context\SystemSource;
-use Cicada\Core\Framework\Context;
-use Cicada\Core\Framework\DataAbstractionLayer\EntityRepository;
-use Cicada\Core\Framework\DataAbstractionLayer\Search\Criteria;
-use Cicada\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
-use Cicada\Core\Framework\Log\Package;
+use Shopware\Core\Content\Category\CategoryCollection;
+use Shopware\Core\Framework\Api\Context\SystemSource;
+use Shopware\Core\Framework\Context;
+use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
+use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
+use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
+use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
@@ -69,7 +69,7 @@ class CategoryProvider extends DemoDataProvider
                 'type' => 'page',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => '蝉鸣平台商城演示系统',
-                    'en-GB' => 'Cicada Chirping Platform Store Demo System',
+                    'en-GB' => 'Shopware Chirping Platform Store Demo System',
                 ]),
                 'children' => [
                     [
@@ -490,7 +490,7 @@ class CategoryProvider extends DemoDataProvider
             return $id;
         }
 
-        // BC support for older shopware versions - \Cicada\Core\Migration\V6_4\Migration1645019769UpdateCmsPageTranslation changed the translations
+        // BC support for older shopware versions - \Shopware\Core\Migration\V6_4\Migration1645019769UpdateCmsPageTranslation changed the translations
         $id = $this->getCmsPageIdByName('Default category layout');
 
         if ($id !== null) {

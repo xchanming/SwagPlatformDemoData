@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData;
 
-use Cicada\Core\Framework\Log\Package;
-use Cicada\Core\Framework\Plugin;
-use Cicada\Core\Framework\Plugin\Context\ActivateContext;
-use Cicada\Core\Framework\Plugin\Context\DeactivateContext;
+use Shopware\Core\Framework\Log\Package;
+use Shopware\Core\Framework\Plugin;
+use Shopware\Core\Framework\Plugin\Context\ActivateContext;
+use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
 
 #[Package('services-settings')]
 class SwagPlatformDemoData extends Plugin
