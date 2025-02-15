@@ -16,7 +16,7 @@
         "shopware-plugin-class": "Swag\\PlatformDemoData\\SwagPlatformDemoData",
         "label": {
             "zh-CN": "商城演示数据",
-            "en-GB": "XChanMing 6 Demo data"
+            "en-GB": "ChanMing 6 Demo data"
         },
         "description": {
             "zh-CN": "演示数据插件。请勿在生产环境中使用！启用插件时，数据将被导入并覆盖现有数据。",
