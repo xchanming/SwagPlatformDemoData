@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Checkout\Customer\CustomerEntity;
 use Shopware\Core\Content\Category\CategoryCollection;
 use Shopware\Core\Framework\Api\Context\SystemSource;
@@ -18,7 +19,6 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Log\Package;
 use Shopware\Core\Test\TestDefaults;
-use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 
 #[Package('services-settings')]
@@ -74,19 +74,19 @@ class CustomerProvider extends DemoDataProvider
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '20001-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
-                'defaultShippingAddress' => [
-                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
-                    'countryId' => $countryId,
-                    'countryStateId' => $this->dbHelper->getCountryStateId(),
-                    'cityId' => $this->dbHelper->getValidCountryCityId(),
-                    'districtId' => $this->dbHelper->getValidCountryDistrictId(),
-                    'phoneNumber' => '12345678',
-                    'salutationId' => $salutationId,
-                    'name' => 'Admin',
-                    'street' => '北京市长安街1号',
-                    'zipcode' => '12345',
-                ],
-                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                //                'defaultShippingAddress' => [
+                //                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                //                    'countryId' => $countryId,
+                //                    'countryStateId' => $this->dbHelper->getCountryStateId(),
+                //                    'cityId' => $this->dbHelper->getValidCountryCityId(),
+                //                    'districtId' => $this->dbHelper->getValidCountryDistrictId(),
+                //                    'phoneNumber' => '12345678',
+                //                    'salutationId' => $salutationId,
+                //                    'name' => 'Admin',
+                //                    'street' => '北京市长安街1号',
+                //                    'zipcode' => '12345',
+                //                ],
+                //                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
