@@ -41,7 +41,7 @@ class CmsPageProvider extends DemoDataProvider
                 'type' => 'landingpage',
                 'locked' => 0,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Startseite',
+                    'zh-CN' => '首页',
                     'en-GB' => 'Homepage',
                 ]),
                 'sections' => [
