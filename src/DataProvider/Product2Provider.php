@@ -311,7 +311,7 @@ class Product2Provider extends DemoDataProvider
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Astra Pro Addon v4.8.9 汉化版 – Astra 主题高级插件',
+                    'zh-CN' => 'Astra Pro Addon v4.8.9 汉化版 – Astra 主题高级应用',
                     'en-GB' => 'Astra Pro Addon v4.8.9',
                 ]),
                 'description' => $this->translationHelper->adjustTranslations([
