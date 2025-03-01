@@ -290,8 +290,8 @@ class CategoryProvider extends DemoDataProvider
                         'type' => 'page',
                         'afterCategoryId' => '251448b91bc742de85643f5fccd89051',
                         'name' => $this->translationHelper->adjustTranslations([
-                            'zh-CN' => 'Footer',
-                            'en-GB' => 'Footer',
+                            'zh-CN' => '页脚导航',
+                            'en-GB' => 'Footer navigation',
                         ]),
                         'footerSalesChannels' => [
                             [
@@ -428,8 +428,8 @@ class CategoryProvider extends DemoDataProvider
                         'type' => 'page',
                         'afterCategoryId' => '01942ce041de71cfbb175364b166dd4d',
                         'name' => $this->translationHelper->adjustTranslations([
-                            'zh-CN' => 'Footer',
-                            'en-GB' => 'Footer',
+                            'zh-CN' => '页脚服务导航',
+                            'en-GB' => 'Footer service navigation',
                         ]),
                         'serviceSalesChannels' => [
                             [
