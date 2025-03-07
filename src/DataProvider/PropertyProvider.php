@@ -42,7 +42,7 @@ class PropertyProvider extends DemoDataProvider
                 'sortingType' => PropertyGroupDefinition::SORTING_TYPE_ALPHANUMERIC,
                 'displayType' => PropertyGroupDefinition::DISPLAY_TYPE_TEXT,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Zielgruppe',
+                    'zh-CN' => '目标群体',
                     'en-GB' => 'Target group',
                 ]),
                 'options' => [
@@ -74,7 +74,7 @@ class PropertyProvider extends DemoDataProvider
                 'sortingType' => PropertyGroupDefinition::SORTING_TYPE_ALPHANUMERIC,
                 'displayType' => PropertyGroupDefinition::DISPLAY_TYPE_COLOR,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Farbe',
+                    'zh-CN' => '颜色',
                     'en-GB' => 'Colour',
                 ]),
                 'options' => [
@@ -162,7 +162,7 @@ class PropertyProvider extends DemoDataProvider
                 'sortingType' => PropertyGroupDefinition::SORTING_TYPE_ALPHANUMERIC,
                 'displayType' => PropertyGroupDefinition::DISPLAY_TYPE_TEXT,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Größe',
+                    'zh-CN' => '大小',
                     'en-GB' => 'Size',
                 ]),
                 'options' => [
