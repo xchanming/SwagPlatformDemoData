@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\Resources\helper;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Log\Package;
 use Shopware\Core\Framework\Uuid\Uuid;
-use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class DbHelper
@@ -226,35 +226,6 @@ class DbHelper
         return \is_string($id) ? $id : null;
     }
 
-    public function getValidCountryDistrictId(): string
-    {
-        $result = $this->connection->fetchOne('
-            SELECT LOWER(HEX(`id`))
-            FROM `country_state`
-            WHERE `parent_id`=:parentId and `short_code`="510156" and `active` = 1
-        ', ['parentId' => Uuid::fromHexToBytes($this->getValidCountryCityId())]);
-
-        if (!$result) {
-            throw new \RuntimeException('No district found, please make sure that basic data is available by running the migrations.');
-        }
-        return (string) $result;
-    }
-
-    public function getValidCountryCityId(): string
-    {
-        $result = $this->connection->fetchOne('
-            SELECT LOWER(HEX(`id`))
-            FROM `country_state`
-            WHERE `parent_id`=:parentId and `short_code`=:shortCode and `active` = 1
-        ', ['parentId' => Uuid::fromHexToBytes($this->getCountryStateId()), 'shortCode' => '5101']);
-
-        if (!$result) {
-            throw new \RuntimeException('No city found, please make sure that basic data is available by running the migrations.');
-        }
-
-        return (string) $result;
-    }
-
     private function getLocaleId(string $languageCode): ?string
     {
         $result = $this->connection->fetchOne(
@@ -271,5 +242,21 @@ class DbHelper
         }
 
         return (string) $result;
+    }
+
+    public function getStateId(string $state, string $machine): string
+    {
+        $stateId = $this->connection->fetchOne('
+                SELECT LOWER(HEX(state_machine_state.id))
+                FROM state_machine_state
+                    INNER JOIN  state_machine
+                    ON state_machine.id = state_machine_state.state_machine_id
+                    AND state_machine.technical_name = :machine
+                WHERE state_machine_state.technical_name = :state
+            ', [
+                'state' => $state,
+                'machine' => $machine,
+            ]);
+        return $stateId;
     }
 }

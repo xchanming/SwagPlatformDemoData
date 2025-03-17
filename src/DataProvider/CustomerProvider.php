@@ -11,6 +11,7 @@ namespace Swag\PlatformDemoData\DataProvider;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Checkout\Customer\CustomerEntity;
+use Shopware\Core\Checkout\Merchant\MerchantStates;
 use Shopware\Core\Content\Category\CategoryCollection;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
@@ -58,7 +59,7 @@ class CustomerProvider extends DemoDataProvider
         $salutationId = $this->getSalutationId();
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannelId();
-
+        $stateId = $this->dbHelper->getStateId('approved', MerchantStates::STATE_MACHINE);
         return [
             [
                 'id' => '6c97534c2c0747f39e8751e43cb2b013',
@@ -74,19 +75,18 @@ class CustomerProvider extends DemoDataProvider
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '20001-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
-                //                'defaultShippingAddress' => [
-                //                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
-                //                    'countryId' => $countryId,
-                //                    'countryStateId' => $this->dbHelper->getCountryStateId(),
-                //                    'cityId' => $this->dbHelper->getValidCountryCityId(),
-                //                    'districtId' => $this->dbHelper->getValidCountryDistrictId(),
-                //                    'phoneNumber' => '12345678',
-                //                    'salutationId' => $salutationId,
-                //                    'name' => 'Admin',
-                //                    'street' => '北京市长安街1号',
-                //                    'zipcode' => '12345',
-                //                ],
-                //                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                'defaultShippingAddress' => [
+                    'id' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                    'countryId' => $countryId,
+                    'countryStateId' => $this->dbHelper->getCountryStateId(),
+                    'city' => '成都市',
+                    'phoneNumber' => '12345678',
+                    'salutationId' => $salutationId,
+                    'name' => 'Admin',
+                    'street' => '北京市长安街1号',
+                    'zipcode' => '12345',
+                ],
+                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
@@ -102,6 +102,12 @@ class CustomerProvider extends DemoDataProvider
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
+                'merchant' => [
+                    'linkPhoneNumber' => '18000000000',
+                    'linkPersonName' => '章三',
+                    'active' => true,
+                    'stateId' => $stateId,
+                ],
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
@@ -764,7 +770,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getCountryId(): string
@@ -779,7 +785,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getStorefrontSalesChannelId(): string
