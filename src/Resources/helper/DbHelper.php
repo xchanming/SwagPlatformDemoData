@@ -226,6 +226,23 @@ class DbHelper
         return \is_string($id) ? $id : null;
     }
 
+    public function getStateId(string $state, string $machine): string
+    {
+        $stateId = $this->connection->fetchOne('
+                SELECT LOWER(HEX(state_machine_state.id))
+                FROM state_machine_state
+                    INNER JOIN  state_machine
+                    ON state_machine.id = state_machine_state.state_machine_id
+                    AND state_machine.technical_name = :machine
+                WHERE state_machine_state.technical_name = :state
+            ', [
+            'state' => $state,
+            'machine' => $machine,
+        ]);
+
+        return $stateId;
+    }
+
     private function getLocaleId(string $languageCode): ?string
     {
         $result = $this->connection->fetchOne(
@@ -242,21 +259,5 @@ class DbHelper
         }
 
         return (string) $result;
-    }
-
-    public function getStateId(string $state, string $machine): string
-    {
-        $stateId = $this->connection->fetchOne('
-                SELECT LOWER(HEX(state_machine_state.id))
-                FROM state_machine_state
-                    INNER JOIN  state_machine
-                    ON state_machine.id = state_machine_state.state_machine_id
-                    AND state_machine.technical_name = :machine
-                WHERE state_machine_state.technical_name = :state
-            ', [
-                'state' => $state,
-                'machine' => $machine,
-            ]);
-        return $stateId;
     }
 }

@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Content\Product\Aggregate\ProductVisibility\ProductVisibilityDefinition;
 use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Log\Package;
 use Shopware\Core\Framework\Uuid\Uuid;
-use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
@@ -68,7 +68,7 @@ class ProductProvider extends DemoDataProvider
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Hauptprodukt mit erweiterten Preisen',
+                    'zh-CN' => '商户B - 商品',
                     'en-GB' => 'Main product with advanced prices',
                 ]),
                 'description' => $this->translationHelper->adjustTranslations([
@@ -76,6 +76,7 @@ class ProductProvider extends DemoDataProvider
                     'en-GB' => self::LOREM_IPSUM,
                 ]),
                 'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
+                'ownerMerchantId' => '0195afa996047007a80c60cd9ca01c1a',
                 'media' => [
                     [
                         'id' => 'e648140ff1f04177b40128ac6b649d8a',
@@ -140,9 +141,10 @@ class ProductProvider extends DemoDataProvider
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => 'Hauptprodukt mit Bewertungen',
+                    'zh-CN' => '商户A - 商品',
                     'en-GB' => 'Main product with reviews',
                 ]),
+                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'description' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => self::LOREM_IPSUM,
                     'en-GB' => self::LOREM_IPSUM,
@@ -1885,7 +1887,7 @@ class ProductProvider extends DemoDataProvider
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 
     private function getStorefrontSalesChannel(): string
@@ -1900,6 +1902,6 @@ class ProductProvider extends DemoDataProvider
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 }

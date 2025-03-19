@@ -9,9 +9,9 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Content\Property\PropertyGroupDefinition;
 use Shopware\Core\Framework\Log\Package;
-use Doctrine\DBAL\Connection;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
 #[Package('services-settings')]

@@ -2,8 +2,8 @@
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
+use Shopware\Core\Framework\Log\Package;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
 #[Package('services-settings')]

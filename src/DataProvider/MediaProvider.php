@@ -9,11 +9,11 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Content\Media\File\FileSaver;
 use Shopware\Core\Content\Media\File\MediaFile;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\Log\Package;
-use Doctrine\DBAL\Connection;
 
 #[Package('services-settings')]
 class MediaProvider extends DemoDataProvider

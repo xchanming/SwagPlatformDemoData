@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoDataTests;
 
+use Doctrine\DBAL\Connection;
+use PHPUnit\Framework\TestCase;
 use Shopware\Core\Content\Category\CategoryCollection;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
@@ -16,8 +18,6 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\Log\Package;
 use Shopware\Core\Framework\Test\TestCaseBase\IntegrationTestBehaviour;
-use Doctrine\DBAL\Connection;
-use PHPUnit\Framework\TestCase;
 use Swag\PlatformDemoData\DemoDataService;
 
 #[Package('services-settings')]

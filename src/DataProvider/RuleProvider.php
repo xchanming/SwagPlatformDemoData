@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData\DataProvider;
 
-use Shopware\Core\Framework\Log\Package;
 use Doctrine\DBAL\Connection;
+use Shopware\Core\Framework\Log\Package;
 
 #[Package('services-settings')]
 class RuleProvider extends DemoDataProvider

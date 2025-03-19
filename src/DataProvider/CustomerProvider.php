@@ -60,6 +60,7 @@ class CustomerProvider extends DemoDataProvider
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannelId();
         $stateId = $this->dbHelper->getStateId('approved', MerchantStates::STATE_MACHINE);
+
         return [
             [
                 'id' => '6c97534c2c0747f39e8751e43cb2b013',
@@ -93,7 +94,7 @@ class CustomerProvider extends DemoDataProvider
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000000000000',
-                'title' => '😊笑死嗷',
+                'title' => '商户A',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test1@test.com',
                 'active' => true,
@@ -103,6 +104,7 @@ class CustomerProvider extends DemoDataProvider
                 'birthday' => '1996-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
                 'merchant' => [
+                    'id' => '0195afa9d74d739f937dbf97f10fead7',
                     'linkPhoneNumber' => '18000000000',
                     'linkPersonName' => '章三',
                     'active' => true,
@@ -110,11 +112,11 @@ class CustomerProvider extends DemoDataProvider
                 ],
             ],
             [
-                'id' => '01942639f4c1705eb9e4435201085e5c',
+                'id' => '0195afae9ece719a83b54501b9e7c869',
                 'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020000000000',
-                'title' => '诗酒趁年华',
+                'title' => '商户B',
                 'password' => TestDefaults::HASHED_PASSWORD,
                 'email' => 'test2@test.com',
                 'active' => true,
@@ -123,6 +125,13 @@ class CustomerProvider extends DemoDataProvider
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
+                'merchant' => [
+                    'id' => '0195afa996047007a80c60cd9ca01c1a',
+                    'linkPhoneNumber' => '18000000000',
+                    'linkPersonName' => '王五',
+                    'active' => true,
+                    'stateId' => $stateId,
+                ],
             ],
             [
                 'id' => '0194263c92f87165ba7962520d9cfd67',
