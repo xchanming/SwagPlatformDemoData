@@ -47,7 +47,7 @@ class ProductProvider extends DemoDataProvider
 
     public function getPayload(): array
     {
-        $taxId = $this->getTaxId();
+        $taxId = $this->dbHelper->getTaxId();
         $storefrontSalesChannel = $this->getStorefrontSalesChannel();
 
         return [
@@ -1873,23 +1873,6 @@ class ProductProvider extends DemoDataProvider
             ],
         ];
     }
-
-    private function getTaxId(): string
-    {
-        $result = $this->connection->fetchOne('
-            SELECT LOWER(HEX(COALESCE(
-                (SELECT `id` FROM `tax` WHERE tax_rate = "19.00" LIMIT 1),
-	            (SELECT `id` FROM `tax`  LIMIT 1)
-            )))
-        ');
-
-        if (!$result) {
-            throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
-        }
-
-        return (string)$result;
-    }
-
     private function getStorefrontSalesChannel(): string
     {
         $result = $this->connection->fetchOne('
