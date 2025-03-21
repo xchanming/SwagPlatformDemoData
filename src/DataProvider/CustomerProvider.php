@@ -87,7 +87,7 @@ class CustomerProvider extends DemoDataProvider
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
                 ],
-                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
+                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c'
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
@@ -105,6 +105,7 @@ class CustomerProvider extends DemoDataProvider
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
                 'merchant' => [
                     'id' => '0195afa9d74d739f937dbf97f10fead7',
+                    'name' => '章三商户',
                     'linkPhoneNumber' => '18000000000',
                     'linkPersonName' => '章三',
                     'active' => true,
@@ -127,6 +128,7 @@ class CustomerProvider extends DemoDataProvider
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
                 'merchant' => [
                     'id' => '0195afa996047007a80c60cd9ca01c1a',
+                    'name' => '王五商户',
                     'linkPhoneNumber' => '18000000000',
                     'linkPersonName' => '王五',
                     'active' => true,
@@ -779,7 +781,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getCountryId(): string
@@ -794,7 +796,7 @@ class CustomerProvider extends DemoDataProvider
             throw new \RuntimeException('No active payment method found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getStorefrontSalesChannelId(): string
