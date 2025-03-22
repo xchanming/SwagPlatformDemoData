@@ -52,6 +52,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Elessi 主题 v6.3.0.2 汉化版 – WooCommerce AJAX 主题',
                     'en-GB' => 'Elessi v6.3.0.2',
@@ -100,6 +101,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Jupiter X v4.8.6 汉化版 – WordPress 多功能主题',
                     'en-GB' => 'Jupiter X v4.8.6 Chinese',
@@ -148,6 +150,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Eduma v5.6.2 汉化版- WordPress 教育/课程主题',
                     'en-GB' => 'Eduma v5.6.2 Chinese',
@@ -196,6 +199,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'PDF Reader Pro',
                     'en-GB' => 'PDF Reader Pro',
@@ -253,6 +257,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'PDF Reader Pro',
                     'en-GB' => 'PDF Reader Pro',
@@ -310,6 +315,7 @@ class Product2Provider extends DemoDataProvider
                 'purchasePrice' => 1.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
+                'ownerMerchantId' => '0194263c92f87165ba7962520d9cfd67',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Astra Pro Addon v4.8.9 汉化版 – Astra 主题高级应用',
                     'en-GB' => 'Astra Pro Addon v4.8.9',
