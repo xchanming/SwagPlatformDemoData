@@ -11,7 +11,6 @@ namespace Swag\PlatformDemoData\DataProvider;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Checkout\Customer\CustomerEntity;
-use Shopware\Core\Checkout\Merchant\MerchantStates;
 use Shopware\Core\Content\Category\CategoryCollection;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
@@ -59,7 +58,6 @@ class CustomerProvider extends DemoDataProvider
         $salutationId = $this->getSalutationId();
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannelId();
-        $stateId = $this->dbHelper->getStateId('approved', MerchantStates::STATE_MACHINE);
 
         return [
             [
@@ -102,15 +100,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
-                'merchant' => [
-                    'id' => '0195afa9d74d739f937dbf97f10fead7',
-                    'name' => '湖南天天开心有限公司',
-                    'linkPhoneNumber' => '18000000000',
-                    'linkPersonName' => '章三',
-                    'active' => true,
-                    'stateId' => $stateId,
-                ],
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
             ],
             [
                 'id' => '0195afae9ece719a83b54501b9e7c869',
@@ -125,15 +115,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
-                'merchant' => [
-                    'id' => '0195afa996047007a80c60cd9ca01c1a',
-                    'name' => '河南梧桐树有限责任人公司',
-                    'linkPhoneNumber' => '18000000000',
-                    'linkPersonName' => '王五',
-                    'active' => true,
-                    'stateId' => $stateId,
-                ],
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
             ],
             [
                 'id' => '0194263c92f87165ba7962520d9cfd67',
@@ -148,15 +130,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2024-06-12 07:13:39.641',
                 'birthday' => '2024-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
-                'merchant' => [
-                    'id' => '0194263c92f87165ba7962520d9cfd67',
-                    'name' => '四川大大熊猫有限责任人公司',
-                    'linkPhoneNumber' => '18000000000',
-                    'linkPersonName' => '王五',
-                    'active' => true,
-                    'stateId' => $stateId,
-                ],
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
             ],
             [
                 'id' => '0194263fa2da724fafe14289d08433b1',

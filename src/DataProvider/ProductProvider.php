@@ -76,7 +76,6 @@ class ProductProvider extends DemoDataProvider
                     'en-GB' => self::LOREM_IPSUM,
                 ]),
                 'manufacturerId' => 'cc1c20c365d34cfb88bfab3c3e81d350',
-                'ownerMerchantId' => '0195afa996047007a80c60cd9ca01c1a',
                 'media' => [
                     [
                         'id' => 'e648140ff1f04177b40128ac6b649d8a',
@@ -144,7 +143,6 @@ class ProductProvider extends DemoDataProvider
                     'zh-CN' => '商户A - 商品',
                     'en-GB' => 'Main product with reviews',
                 ]),
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'description' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => self::LOREM_IPSUM,
                     'en-GB' => self::LOREM_IPSUM,
@@ -199,7 +197,6 @@ class ProductProvider extends DemoDataProvider
                 'weight' => 0.17,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Hauptartikel',
                     'en-GB' => 'Main product',
@@ -264,7 +261,6 @@ class ProductProvider extends DemoDataProvider
                 'weight' => 0.15,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Hauptprodukt, versandkostenfrei mit Hervorhebung',
                     'en-GB' => 'Main product, free shipping with highlighting',
@@ -325,7 +321,6 @@ class ProductProvider extends DemoDataProvider
                 'weight' => 0.5,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Variantenprodukt',
                     'en-GB' => 'Variant product',
@@ -482,7 +477,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 19.99,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Hauptprodukt mit Eigenschaften',
                     'en-GB' => 'Main product with properties',
@@ -606,7 +600,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 950,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Mac FoneLab for iOS 10.5.58.149578 iOS设备数据快速恢复软件',
                     'en-GB' => 'Mac FoneLab for iOS 10.5.58.149578',
@@ -656,7 +649,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => '4K YouTube to MP3 5.7.4 在线视频提取音乐',
                     'en-GB' => '4K YouTube to MP3 5.7.4',
@@ -705,7 +697,6 @@ class ProductProvider extends DemoDataProvider
                 'shippingFree' => true,
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'displayInListing' => true,
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'EdgeView 4.9.6 图像查看器',
@@ -755,7 +746,6 @@ class ProductProvider extends DemoDataProvider
                 'shippingFree' => true,
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'displayInListing' => true,
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Adobe Acrobat Pro DC',
@@ -806,7 +796,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'PullTube：油管视频下载',
                     'en-GB' => 'PullTube',
@@ -856,7 +845,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Typora1.9.3',
                     'en-GB' => 'Typora1.9.3',
@@ -906,7 +894,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'GoodTask',
                     'en-GB' => 'GoodTask',
@@ -956,7 +943,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Idea',
                     'en-GB' => 'Idea',
@@ -1006,7 +992,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Idea',
                     'en-GB' => 'Idea',
@@ -1056,7 +1041,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Idea',
                     'en-GB' => 'Idea',
@@ -1106,7 +1090,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Phpstorm 6.6.60',
                     'en-GB' => 'Phpstorm 6.6.60',
@@ -1156,7 +1139,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'OmniPlan Pro 6.6.60',
                     'en-GB' => 'Phpstorm Pro 6.6.60',
@@ -1206,7 +1188,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'CompressX 1.7',
                     'en-GB' => 'CompressX 1.7',
@@ -1256,7 +1237,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Termius',
                     'en-GB' => 'Termius',
@@ -1306,7 +1286,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Parallels Desktop V8',
                     'en-GB' => 'Parallels Desktop V8',
@@ -1356,7 +1335,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'QuickRecorder',
                     'en-GB' => 'QuickRecorder',
@@ -1406,7 +1384,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'PlayCover',
                     'en-GB' => 'PlayCover',
@@ -1456,7 +1433,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'NeoHtop',
                     'en-GB' => 'NeoHtop',
@@ -1506,7 +1482,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Sentinel',
                     'en-GB' => 'Sentinel',
@@ -1556,7 +1531,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'TrollInstallerX',
                     'en-GB' => 'TrollInstallerX',
@@ -1606,7 +1580,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'PlayCover',
                     'en-GB' => 'PlayCover',
@@ -1656,7 +1629,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Telegram',
                     'en-GB' => 'Telegram',
@@ -1706,7 +1678,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'MacOS 13 Ventura',
                     'en-GB' => 'MacOS 13 Ventura',
@@ -1756,7 +1727,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'MacOS Sonoma',
                     'en-GB' => 'MacOS Sonoma',
@@ -1806,7 +1776,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Mihomo Party',
                     'en-GB' => 'Mihomo Party',
@@ -1856,7 +1825,6 @@ class ProductProvider extends DemoDataProvider
                 'purchasePrice' => 600,
                 'releaseDate' => new \DateTimeImmutable(),
                 'displayInListing' => true,
-                'ownerMerchantId' => '0195afa9d74d739f937dbf97f10fead7',
                 'name' => $this->translationHelper->adjustTranslations([
                     'zh-CN' => 'Download product',
                     'en-GB' => 'Download product',
