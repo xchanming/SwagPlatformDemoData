@@ -20,7 +20,7 @@ use Shopware\Core\Framework\Log\Package;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class CategoryProvider extends DemoDataProvider
 {
     /**

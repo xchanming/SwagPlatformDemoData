@@ -8,7 +8,7 @@ use Shopware\Core\Framework\Util\Hasher;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class NewsletterRecipientProvider extends DemoDataProvider
 {
     private TranslationHelper $translationHelper;

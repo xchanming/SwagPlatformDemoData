@@ -1,7 +1,7 @@
 {
     "name": "xchanming-ag/swag-demo-data",
     "description": "Plugin including demo data",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
@@ -36,6 +36,11 @@
             "Swag\\PlatformDemoData\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Swag\\PlatformDemoData\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "cs": "../../../vendor/bin/php-cs-fixer fix --dry-run",
         "cs-fix": "../../../vendor/bin/php-cs-fixer fix",
@@ -44,5 +49,10 @@
             "php bin/phpstan-config-generator.php",
             "../../../vendor/bin/phpstan analyze"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace Swag\PlatformDemoData\DataProvider;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\Log\Package;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 abstract class DemoDataProvider
 {
     abstract public function getAction(): string;
@@ -24,7 +24,5 @@ abstract class DemoDataProvider
      */
     abstract public function getPayload(): array;
 
-    public function finalize(Context $context): void
-    {
-    }
+    public function finalize(Context $context): void {}
 }

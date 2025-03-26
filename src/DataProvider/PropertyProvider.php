@@ -14,7 +14,7 @@ use Shopware\Core\Content\Property\PropertyGroupDefinition;
 use Shopware\Core\Framework\Log\Package;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class PropertyProvider extends DemoDataProvider
 {
     private TranslationHelper $translationHelper;
@@ -82,7 +82,7 @@ class PropertyProvider extends DemoDataProvider
                         'id' => '2bfd278e87204807a890da4a3e81dd90',
                         'colorHexCode' => '#0000ffff',
                         'name' => $this->translationHelper->adjustTranslations([
-                            'zh-CN' => 'Blau',
+                            'zh-CN' => '蓝色',
                             'en-GB' => 'Blue',
                         ]),
                     ],
@@ -90,7 +90,7 @@ class PropertyProvider extends DemoDataProvider
                         'id' => '52454db2adf942b2ac079a296f454a10',
                         'colorHexCode' => '#ff0000ff',
                         'name' => $this->translationHelper->adjustTranslations([
-                            'zh-CN' => 'Rot',
+                            'zh-CN' => '红色',
                             'en-GB' => 'Red',
                         ]),
                     ],
@@ -98,7 +98,7 @@ class PropertyProvider extends DemoDataProvider
                         'id' => 'ad735af1ebfb421e93e408b073c4a89a',
                         'colorHexCode' => '#ffffffff',
                         'name' => $this->translationHelper->adjustTranslations([
-                            'zh-CN' => 'Weiß',
+                            'zh-CN' => '白色',
                             'en-GB' => 'White',
                         ]),
                     ],

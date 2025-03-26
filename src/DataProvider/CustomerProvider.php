@@ -21,7 +21,7 @@ use Shopware\Core\Framework\Log\Package;
 use Shopware\Core\Test\TestDefaults;
 use Swag\PlatformDemoData\Resources\helper\DbHelper;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class CustomerProvider extends DemoDataProvider
 {
     private Connection $connection;
@@ -85,7 +85,7 @@ class CustomerProvider extends DemoDataProvider
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
                 ],
-                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c'
+                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
@@ -100,7 +100,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
             ],
             [
                 'id' => '0195afae9ece719a83b54501b9e7c869',
@@ -115,7 +115,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
                 'birthday' => '1996-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
             ],
             [
                 'id' => '0194263c92f87165ba7962520d9cfd67',
@@ -130,7 +130,7 @@ class CustomerProvider extends DemoDataProvider
                 'newsletter' => false,
                 'lastLogin' => '2024-06-12 07:13:39.641',
                 'birthday' => '2024-06-06',
-                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6'
+                'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
             ],
             [
                 'id' => '0194263fa2da724fafe14289d08433b1',

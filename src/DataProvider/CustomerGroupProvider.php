@@ -3,8 +3,10 @@
 namespace Swag\PlatformDemoData\DataProvider;
 
 use Doctrine\DBAL\Connection;
+use Shopware\Core\Framework\Log\Package;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
+#[Package('fundamentals@after-sales')]
 class CustomerGroupProvider extends DemoDataProvider
 {
     private TranslationHelper $translationHelper;
