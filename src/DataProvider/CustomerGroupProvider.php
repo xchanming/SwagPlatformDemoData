@@ -36,6 +36,8 @@ class CustomerGroupProvider extends DemoDataProvider
                     'zh-CN' => 'VIP 客户组',
                     'en-GB' => 'VIP customers group',
                 ]),
+                'registrationActive' => true,
+                'registrationTitle' => 'vip',
             ],
             [
                 'id' => '0194265f889071d99507a9cc6b09b92f',
